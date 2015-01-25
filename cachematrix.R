@@ -3,6 +3,9 @@
 
 ## Write a short comment describing this function
 
+## makeCacheMatrix provides a set of 4 functions to get/set a matrix and its inverse
+## by leveraging lexicol scope
+
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
   set <- function(y){
@@ -19,6 +22,10 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
+
+## cacheSolve takes in the list returned by makeCacheMatrix 
+## retrives the inverse if it's available. 
+## otherwise it calculates the inverse and caches it.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
